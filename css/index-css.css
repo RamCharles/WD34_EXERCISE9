@@ -114,7 +114,7 @@ body{
   width: 55vmin;
   border-radius: 2vw;
   float: right;
-  margin-right: 15%;
+  margin-right: 20%;
 }
 
 .aboutuscontent{
@@ -133,6 +133,86 @@ body{
     text-indent: 3vw;
     text-align: justify;
 }
+
+.contactusform{
+  font-family: 'Libre Baskerville', serif;
+  position: relative;
+  text-align: left;
+  margin: auto;
+  width: 90%;
+  margin-top: 43vw;
+  transform: translateY(5vw);
+}
+  .contactusheader h1{
+    display: block;
+    margin: 0 0 45px 0;
+    color: #a13333;
+    font-weight: 200;
+    font-size: 60px;
+  }
+  
+  .group { 
+    position: relative; 
+    margin-bottom: 25px; 
+  }
+  
+  input {
+    font-size: 25px;
+    height: 25px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 500px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #B1B1B1;
+    color: #B1B1B1;
+    background: black;
+    opacity: 0.5;
+    transition: 0.2s ease;
+    resize:both
+  }
+  
+  input:focus {
+    outline: none;
+    opacity: 1;
+  }
+  
+  label {
+    color: white; 
+    font-size: 13px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 15px;
+    opacity: 0.8;
+    transition: 0.2s ease all; 
+  }
+  
+  input:focus ~ label, input:valid ~ label 		{
+    top: -10px;
+    font-size: 12px;
+    color: #B3541E;
+    opacity: 1;
+  }
+  
+  .highlight {
+    position: absolute;
+    height: 60%; 
+    width: 500px; 
+    top: 25%; 
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  .send-btn{
+    color: white;
+  }
+  
+  input:focus ~ .highlight {
+    animation:inputHighlighter 0.3s ease;
+  }
 
 /***ANIMATIONS AND EFFECTS GO HERE***/
 
@@ -172,6 +252,10 @@ body{
 .fourthimageslider{
     animation: slide-out-top-four 40s linear infinite ;
     margin: 10px;
+}
+
+.endslider{
+  display: flex;
 }
 
 
@@ -352,4 +436,7 @@ body{
       opacity: 1;
     }
   }
-  
+
+  .footer{
+    transform: translateY(-43vw);
+  }
