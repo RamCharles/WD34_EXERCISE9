@@ -260,7 +260,7 @@ body{
  
   @keyframes slide-out-top-three {
     0% {
-             transform: translateY(0);
+             transform: translateY(-298px);
       opacity: 1;
     }
     100% {
